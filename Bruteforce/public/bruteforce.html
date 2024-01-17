@@ -1,0 +1,53 @@
+<!-- Save this as bruteforce.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebLock - Bruteforce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" style="text-decoration: none;">
+                <h1>WebLock</h1>
+            </a>
+        </header>
+        <main>
+            <div class="content-box">
+                <nav>
+                    <ul>
+                        <li><a href="../SQLi/SQLi.html"><button type="button">SQL Injection</button></a></li>
+                        <li><a href="../XSS/XSS.html"><button type="button">Cross Site Scripting(XSS)</button></a></li>
+                        <li class="active"><button type="button">Bruteforce</button></li>
+                        <li><button type="button">CSRF</button></li>
+                        <li><button type="button">File Upload</button></li>
+                        <li><button type="button">Broken Authentication</button></li>
+                    </ul>
+                </nav>
+                <section class="Welcome">
+                    <h2>Bruteforce</h2>
+                    <p>Bruteforce is an attack method where an attacker tries to guess the correct username and password combination to gain unauthorized access.</p>
+                    <br><br>
+                    <p>Try your luck by entering a username and password below:</p>
+                </section>
+                <section class="select">
+                    <form action="/bruteforce" method="post">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                        <br>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

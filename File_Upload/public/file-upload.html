@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebLock-Vulnerable Web Application</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Update the path to your CSS file -->
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>WebLock</h1>
+        </header>
+        <main>
+            <div class="content-box">
+                <nav>
+                    <!-- Add 'active' class to highlight the current page -->
+                    <ul>
+                        <li class="active"><button type="button">SQL Injection</button></li>
+                        <li><a href="xss.html"><button type="button">Cross Site Scripting(XSS)</button></a></li>
+                        <li><a href="C:\Users\Brainded\Desktop\WebLock\new\Bruteforce\public\bruteforce.html"><button
+                                    type="button">Bruteforce</button></a></li>
+                        <li><button type="button">CSRF</button></li>
+                        <li><button type="button">File Upload</button></li>
+                        <li><button type="button">Broken Authentication</button></li>
+                    </ul>
+                </nav>
+                <section class="Welcome">
+                    <h1>WebLock: File Upload</h1>
+                    <p>Upload a file to test your skills in exploiting file upload vulnerabilities.</p>
+                    <br><br>
+
+                </section>
+                <section class="select">
+                    <p>
+
+                    <form action="/upload" method="post" enctype="multipart/form-data">
+                        <label for="file">Select File:</label>
+                        <input type="file" name="file" id="file">
+                        <br>
+                        <label for="description">Description (Optional):</label>
+                        <input type="text" name="description" id="description">
+                        <br>
+                        <button type="submit">Upload File</button>
+                    </form>
+                    <br>
+                    <div id="upload-status"></div>
+                    <script src="script.js"></script>
+                    </p>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

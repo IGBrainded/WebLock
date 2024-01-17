@@ -1,0 +1,133 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Apply a background color and set some default styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    /* Vertically center the content */
+    justify-content: center;
+    /* Horizontally center the content */
+    min-height: 100vh;
+}
+
+/* Style the header */
+header {
+    background-color: #202020;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 7px  ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    a:visited {
+        color: white;
+      }
+}
+
+/* Style the main content */
+main {
+    display: flex;
+    align-items: center;
+    /* Vertically center the content */
+    justify-content: center;
+    /* Horizontally center the content */
+    flex-direction: column;
+}
+
+/* Adjust the vulnerability section */
+.Welcome {
+    padding: 20px;
+    /* Restore padding to vulnerability section */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: -320px;
+    /* Add top and bottom margin for separation */
+    margin-left: 200px;
+    text-align: center;
+    /* Center the content horizontally */
+    color: #ffff;
+}
+
+.select {
+    padding: 30px;
+    /* Restore padding to vulnerability section */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 10px;
+    /* Add top and bottom margin for separation */
+    margin-left: 200px;
+    text-align: center;
+    /* Center the content horizontally */
+    color: #ffff;
+}
+
+/* Style the content box */
+.content-box {
+    background-color: #333333;
+    padding: 400px;
+    /* Increased padding */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding-bottom: 230px;
+}
+
+nav {
+    margin-left: -370px;
+    margin-top: -350px;
+    margin-right: 900px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+
+}
+
+/* Adjust the margin of the ul element within the nav */
+nav ul {
+    margin-bottom: 20px;
+    /* Add space between the sidebar options */
+    padding: 0;
+    /* Remove padding */
+}
+
+/* Style buttons */
+button {
+    background-color: #202020;
+    color: #fff;
+    width: 200px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0px 10px 5px 5px;
+    /* Remove margin on the buttons */
+}
+
+button:hover {
+    background-color: #2089c7;
+}
+
+nav ul li {
+    margin-bottom: 0;
+    padding: 10px;
+
+    /* Remove the margin from the last sidebar option */
+}
+nav ul li button{
+    padding: 10px;
+}

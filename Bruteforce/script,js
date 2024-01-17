@@ -1,0 +1,14 @@
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const toggleButtonIcon = document.getElementById('toggleButtonIcon');
+    const toggleButtonText = document.getElementById('toggleButtonText');
+    const welcomeText = document.querySelector('h1');
+
+    sidebar.style.width = sidebar.style.width === '250px' ? '0' : '250px';
+    toggleButtonIcon.textContent = sidebar.style.width === '0' ? '☰' : '';
+    toggleButtonText.style.display = sidebar.style.width === '0' ? 'inline-block' : 'none';
+    welcomeText.style.marginLeft = sidebar.style.width === '0' ? '20px' : '270px';
+}
+
+// Initially, ensure the sidebar is expanded
+toggleSidebar();

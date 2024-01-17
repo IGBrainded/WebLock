@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebLock-Vulnerable Web Application</title>
+    <link rel="stylesheet" href="/styleSQLi.css"> <!-- Update the path to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>WebLock</h1>
+        </header>
+        <main>
+            <div class="content-box">
+                <nav>
+                    <!-- Add 'active' class to highlight the current page -->
+                    <ul>
+                        <li class="active"><button type="button">SQL Injection</button></li>
+                        <li><a href="xss.html"><button type="button">Cross Site Scripting(XSS)</button></a></li>
+                        <li><a href="C:\Users\Brainded\Desktop\WebLock\new\Bruteforce\public\bruteforce.html"><button type="button">Bruteforce</button></a></li>
+                        <li><button type="button">CSRF</button></li>
+                        <li><button type="button">File Upload</button></li>
+                        <li><button type="button">Broken Authentication</button></li>
+                    </ul>
+                </nav>
+                <section class="Welcome">
+                    <h2>SQL INJECTION</h2>
+                    <p>SQL injection is a type of cybersecurity attack in which an attacker manipulates <br> input data
+                        to execute arbitrary SQL queries on a database, potentially gaining <br> unauthorized access or
+                        retrieving sensitive information.</p>
+                    <br><br>
+                    <p>Here's a login form. Try exploiting the SQL injection vulnerability to bypass authentication.</p>
+                </section>
+                <section class="select">
+                    <p>
+                        <h1>Login</h1>
+                        <form action="/sql-injection" method="post">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" required>
+                            <br>
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+                            <br>
+                            <input type="submit" value="Submit">
+                         </form>
+                         
+                    </p>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
